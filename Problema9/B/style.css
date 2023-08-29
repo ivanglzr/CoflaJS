@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+}
+
+body {
+  overflow: hidden;
+}
+
+#container {
+  width: 100%;
+}
+
+.alumno-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.flex-div {
+  width: 100%;
+  margin: 5px;
+  padding: 5px;
+  border: 2px solid blue;
+}
+
+.submit {
+  width: 200px;
+  height: 40px;
+  margin: 20px 50%;
+  transform: translateX(-50%);
+  border: 1px solid black;
+  border-radius: 25px;
+  font-size: 20px;
+}
