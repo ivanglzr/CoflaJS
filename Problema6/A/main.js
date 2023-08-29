@@ -10,7 +10,6 @@ for (let i = 0; i < 20; i++) {
 
   let div = document.createElement("div");
   div.classList.add("key-container");
-  div.classList.add(`${i}`);
 
   let img = document.createElement("img");
   img.classList.add("img");
@@ -29,7 +28,7 @@ for (let i = 0; i < 20; i++) {
 
   let btn = document.createElement("button");
   btn.addEventListener("click", (e) => {
-    let key = i;
+    let key = i + 1;
     let mod = modelNum;
     let pre = numPrecio;
     alert(`Has seleccionado la llave ${key}, modelo ${mod} y cuesta ${pre}$`);
