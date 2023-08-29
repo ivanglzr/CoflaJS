@@ -17,17 +17,29 @@ for (let i = 0; i < 20; i++) {
   img.src = llavesURL[keyImg];
 
   let p = document.createElement("p");
-  p.innerHTML = `Llave ${i + 1}`;
+  p.innerHTML = `Llave <b>${i + 1}</b>`;
+
+  let model = document.createElement("p");
+  let modelNum = Math.floor(Math.random() * 10000);
+  model.innerHTML = `Modelo <b>${modelNum}</b>`;
+
+  let precio = document.createElement("p");
+  let numPrecio = Math.floor(Math.random() * 10) + 20;
+  precio.innerHTML = `Precio: <b style="color: green;">${numPrecio}$</b>`;
 
   let btn = document.createElement("button");
   btn.addEventListener("click", (e) => {
     let key = i;
-    alert("Has seleccionado la llave " + (key + 1));
+    let mod = modelNum;
+    let pre = numPrecio;
+    alert(`Has seleccionado la llave ${key}, modelo ${mod} y cuesta ${pre}$`);
   });
   btn.innerHTML = "Seleccionar";
 
   div.appendChild(img);
   div.appendChild(p);
+  div.appendChild(model);
+  div.appendChild(precio);
   div.appendChild(btn);
 
   document.body.appendChild(div);
