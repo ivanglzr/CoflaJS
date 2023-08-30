@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="container">
+      <div id="form">
+        <h2 class="title">Notas</h2>
+        <div class="form-group">
+          <label for="nota">Nota</label>
+          <input
+            type="number"
+            class="input"
+            name="nota"
+            id="nota"
+            autocomplete="off"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="trabajo1">Trabajo 1</label>
+          <input
+            type="number"
+            class="input"
+            name="trabajo1"
+            id="trabajo1"
+            autocomplete="off"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="trabajo2">Trabajo 2</label>
+          <input
+            type="number"
+            class="input"
+            name="trabajo2"
+            id="trabajo2"
+            autocomplete="off"
+            required
+          />
+        </div>
+
+        <input type="submit" value="Enviar" name="btn-submit" id="btn-submit" />
+      </div>
+      <p id="p-info"></p>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
